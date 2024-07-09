@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Cabaña2.kml</name>
+	<Schema name="infraestructura pecuaria" id="S_infraestructura_pecuaria_ISS">
+		<SimpleField type="int" name="id_2"><displayName>&lt;b&gt;id&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="area"><displayName>&lt;b&gt;area&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Nombre"><displayName>&lt;b&gt;Nombre&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<StyleMap id="falseColor170">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#falseColor12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#falseColor14</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="falseColor12">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>id</b></td><td>$[Areas 1/id_2]</td></tr>
+  <tr><td><b>Area</b></td><td>$[Areas 1/Area]</td></tr>
+  <tr><td><b>Nombre</b></td><td>$[Areas 1/Nombre]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff3f7f7f</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>cc05b4ff</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_lodging">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_lodging</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_lodging</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_lodging">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/lodging.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sh_lodging">
+		<IconStyle>
+			<scale>1.18182</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/lodging.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0" xunits="fraction" yunits="fraction"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="falseColor14">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>id</b></td><td>$[Areas 1/id_2]</td></tr>
+  <tr><td><b>Area</b></td><td>$[Areas 1/Area]</td></tr>
+  <tr><td><b>Nombre</b></td><td>$[Areas 1/Nombre]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff3f7f7f</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>cc05b4ff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>Cabaña2</name>
+		<Placemark>
+			<name>Cabaña</name>
+			<styleUrl>#falseColor170</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_infraestructura_pecuaria_ISS">
+					<SimpleData name="id_2">0</SimpleData>
+					<SimpleData name="area">272.874637057736</SimpleData>
+					<SimpleData name="Nombre">Caba�a 3</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-74.92840860491576,4.174325479080894,0 -74.92858733977809,4.174379515202071,0 -74.92862059277574,4.174258973085623,0 -74.9284418579134,4.174217406838539,0 -74.92840860491576,4.174325479080894,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Cabaña2</name>
+			<LookAt>
+				<longitude>-74.92842439220871</longitude>
+				<latitude>4.174050011680453</latitude>
+				<altitude>0</altitude>
+				<heading>-3.060806702776641</heading>
+				<tilt>43.35442558933354</tilt>
+				<range>200.0053400057603</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_lodging</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-74.92851792599204,4.174269331889365,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

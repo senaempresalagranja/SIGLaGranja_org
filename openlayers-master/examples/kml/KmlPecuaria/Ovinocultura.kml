@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Ovinocultura.kml</name>
+	<visibility>0</visibility>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.18182</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>Ovinocultura</name>
+		<visibility>0</visibility>
+		<Document>
+			<name>ovinos.shp</name>
+			<visibility>0</visibility>
+			<open>1</open>
+			<Schema name="ovinos" id="S_ovinos_SSS">
+				<SimpleField type="string" name="NAME"><displayName>&lt;b&gt;NAME&lt;/b&gt;</displayName>
+</SimpleField>
+				<SimpleField type="string" name="DATE"><displayName>&lt;b&gt;DATE&lt;/b&gt;</displayName>
+</SimpleField>
+				<SimpleField type="string" name="TIME"><displayName>&lt;b&gt;TIME&lt;/b&gt;</displayName>
+</SimpleField>
+			</Schema>
+			<Style id="falseColor1">
+				<IconStyle>
+					<color>ffe7ebef</color>
+				</IconStyle>
+				<BalloonStyle>
+					<text><![CDATA[<table border="0">
+  <tr><td><b>NAME</b></td><td>$[ovinos/NAME]</td></tr>
+  <tr><td><b>DATE</b></td><td>$[ovinos/DATE]</td></tr>
+  <tr><td><b>TIME</b></td><td>$[ovinos/TIME]</td></tr>
+</table>]]></text>
+				</BalloonStyle>
+				<ListStyle>
+				</ListStyle>
+				<LineStyle>
+					<color>ffffaaff</color>
+					<width>1.5</width>
+				</LineStyle>
+				<PolyStyle>
+					<color>a60000aa</color>
+				</PolyStyle>
+			</Style>
+			<Style id="falseColor0">
+				<IconStyle>
+					<color>ffe7ebef</color>
+				</IconStyle>
+				<BalloonStyle>
+					<text><![CDATA[<table border="0">
+  <tr><td><b>NAME</b></td><td>$[ovinos/NAME]</td></tr>
+  <tr><td><b>DATE</b></td><td>$[ovinos/DATE]</td></tr>
+  <tr><td><b>TIME</b></td><td>$[ovinos/TIME]</td></tr>
+</table>]]></text>
+				</BalloonStyle>
+				<ListStyle>
+				</ListStyle>
+				<LineStyle>
+					<color>ffffaaff</color>
+					<width>1.5</width>
+				</LineStyle>
+				<PolyStyle>
+					<color>a60000aa</color>
+				</PolyStyle>
+			</Style>
+			<StyleMap id="falseColor">
+				<Pair>
+					<key>normal</key>
+					<styleUrl>#falseColor0</styleUrl>
+				</Pair>
+				<Pair>
+					<key>highlight</key>
+					<styleUrl>#falseColor1</styleUrl>
+				</Pair>
+			</StyleMap>
+			<Folder id="layer 0">
+				<name>ovinos</name>
+				<visibility>0</visibility>
+				<open>1</open>
+				<Placemark>
+					<name>Sin nombre</name>
+					<visibility>0</visibility>
+					<styleUrl>#falseColor</styleUrl>
+					<ExtendedData>
+						<SchemaData schemaUrl="#S_ovinos_SSS">
+							<SimpleData name="NAME">Sin nombre</SimpleData>
+							<SimpleData name="DATE"></SimpleData>
+							<SimpleData name="TIME"></SimpleData>
+						</SchemaData>
+					</ExtendedData>
+					<Polygon>
+						<outerBoundaryIs>
+							<LinearRing>
+								<coordinates>
+									-74.92919999999999,4.17142166666669,0 -74.92869133333335,4.171383166666662,0 -74.92863416666665,4.171550333333332,0 -74.929534,4.172182333333305,0 -74.92978916666667,4.171631166666638,0 -74.92935199999999,4.171423833333336,0 -74.92919999999999,4.17142166666669,0 
+								</coordinates>
+							</LinearRing>
+						</outerBoundaryIs>
+					</Polygon>
+				</Placemark>
+			</Folder>
+		</Document>
+		<Placemark>
+			<name>Ovinos</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>-74.92875362862074</longitude>
+				<latitude>4.171510522739077</latitude>
+				<altitude>0</altitude>
+				<heading>0.0001660919683069238</heading>
+				<tilt>45.00000052231113</tilt>
+				<range>185.1656559488656</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-74.92929423403881,4.171655031823326,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

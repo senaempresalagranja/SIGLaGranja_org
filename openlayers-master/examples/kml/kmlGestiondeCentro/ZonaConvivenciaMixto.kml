@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>ZonaConvivenciaMixto.kml</name>
+	<Schema name="infraestructura pecuaria" id="S_infraestructura_pecuaria_ISS">
+		<SimpleField type="int" name="id_2"><displayName>&lt;b&gt;id&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="area"><displayName>&lt;b&gt;area&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Nombre"><displayName>&lt;b&gt;Nombre&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="falseColor14">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>id</b></td><td>$[Areas 1/id_2]</td></tr>
+  <tr><td><b>Area</b></td><td>$[Areas 1/Area]</td></tr>
+  <tr><td><b>Nombre</b></td><td>$[Areas 1/Nombre]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff3f7f7f</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>cc05b4ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="falseColor170">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#falseColor12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#falseColor14</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.18182</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="falseColor12">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>id</b></td><td>$[Areas 1/id_2]</td></tr>
+  <tr><td><b>Area</b></td><td>$[Areas 1/Area]</td></tr>
+  <tr><td><b>Nombre</b></td><td>$[Areas 1/Nombre]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff3f7f7f</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>cc05b4ff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>ZonaConvivenciaMixto</name>
+		<Placemark>
+			<name>Centro de convivencia</name>
+			<styleUrl>#falseColor170</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_infraestructura_pecuaria_ISS">
+					<SimpleData name="id_2">0</SimpleData>
+					<SimpleData name="area">741.783507178294</SimpleData>
+					<SimpleData name="Nombre">Internado Dormitorio</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-74.92794711018669,4.173618634107501,0 -74.92793420276573,4.173661294221742,0 -74.92790565332636,4.173776804619749,0 -74.92822987005341,4.173868250363286,0 -74.92828412494801,4.173882853243112,0 -74.92831737794566,4.173762092353184,0 -74.92827143630046,4.173747708246838,0 -74.92827143630046,4.173726925123296,0 -74.92794711018669,4.173618634107501,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>ZonaConvivenciaMixto</name>
+			<LookAt>
+				<longitude>-74.92806058539735</longitude>
+				<latitude>4.173578344812733</latitude>
+				<altitude>0</altitude>
+				<heading>-1.555187935202155</heading>
+				<tilt>37.65202230273472</tilt>
+				<range>195.2111666268344</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#m_ylw-pushpin</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-74.92810198983534,4.173733778475688,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

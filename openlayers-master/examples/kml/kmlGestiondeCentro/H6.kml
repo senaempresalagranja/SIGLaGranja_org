@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>H6.kml</name>
+	<Schema name="infraestructura pecuaria" id="S_infraestructura_pecuaria_ISS">
+		<SimpleField type="int" name="id_2"><displayName>&lt;b&gt;id&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="area"><displayName>&lt;b&gt;area&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Nombre"><displayName>&lt;b&gt;Nombre&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<StyleMap id="falseColor170">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#falseColor12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#falseColor14</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="falseColor12">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>id</b></td><td>$[Areas 1/id_2]</td></tr>
+  <tr><td><b>Area</b></td><td>$[Areas 1/Area]</td></tr>
+  <tr><td><b>Nombre</b></td><td>$[Areas 1/Nombre]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff3f7f7f</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>cc05b4ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_wht-diamond">
+		<IconStyle>
+			<scale>1.18182</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_wht-diamond">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_wht-diamond">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_wht-diamond</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_wht-diamond</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="falseColor14">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>id</b></td><td>$[Areas 1/id_2]</td></tr>
+  <tr><td><b>Area</b></td><td>$[Areas 1/Area]</td></tr>
+  <tr><td><b>Nombre</b></td><td>$[Areas 1/Nombre]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff3f7f7f</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>cc05b4ff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>H6</name>
+		<Placemark>
+			<name>Ambiente H</name>
+			<styleUrl>#falseColor170</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_infraestructura_pecuaria_ISS">
+					<SimpleData name="id_2">0</SimpleData>
+					<SimpleData name="area">124.16552165213</SimpleData>
+					<SimpleData name="Nombre"></SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-74.9279033405748,4.172643147560482,0 -74.9278147799761,4.172634191994313,0 -74.92780681947285,4.172751609417298,0 -74.92789239488282,4.172754594606034,0 -74.9279033405748,4.172643147560482,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>H6</name>
+			<LookAt>
+				<longitude>-74.92778303596924</longitude>
+				<latitude>4.172693826389684</latitude>
+				<altitude>0</altitude>
+				<heading>2.487115191815158</heading>
+				<tilt>32.65066145920029</tilt>
+				<range>110.4541105721828</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_wht-diamond</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-74.9278542062262,4.172658347432568,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

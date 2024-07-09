@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>AmbienteAutoagronomo.kml</name>
+	<Schema name="infraestructura pecuaria" id="S_infraestructura_pecuaria_ISS">
+		<SimpleField type="int" name="id_2"><displayName>&lt;b&gt;id&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="area"><displayName>&lt;b&gt;area&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Nombre"><displayName>&lt;b&gt;Nombre&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<StyleMap id="falseColor170">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#falseColor12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#falseColor14</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="falseColor12">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>id</b></td><td>$[Areas 1/id_2]</td></tr>
+  <tr><td><b>Area</b></td><td>$[Areas 1/Area]</td></tr>
+  <tr><td><b>Nombre</b></td><td>$[Areas 1/Nombre]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff3f7f7f</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>cc05b4ff</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_wht-diamond">
+		<IconStyle>
+			<scale>1.18182</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_wht-diamond">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/wht-diamond-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_wht-diamond">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_wht-diamond</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_wht-diamond</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="falseColor14">
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>id</b></td><td>$[Areas 1/id_2]</td></tr>
+  <tr><td><b>Area</b></td><td>$[Areas 1/Area]</td></tr>
+  <tr><td><b>Nombre</b></td><td>$[Areas 1/Nombre]</td></tr>
+</table>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff3f7f7f</color>
+			<width>1.5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>cc05b4ff</color>
+		</PolyStyle>
+	</Style>
+	<Folder>
+		<name>AmbienteAutoagronomo</name>
+		<visibility>0</visibility>
+		<Placemark>
+			<name>Ambiente de guadua</name>
+			<visibility>0</visibility>
+			<styleUrl>#falseColor170</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_infraestructura_pecuaria_ISS">
+					<SimpleData name="id_2">0</SimpleData>
+					<SimpleData name="area">1108.98928395105</SimpleData>
+					<SimpleData name="Nombre">Ambiente abierto</SimpleData>
+				</SchemaData>
+			</ExtendedData>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-74.92849791765354,4.173937108137729,0 -74.92849769888014,4.173934975131997,0 -74.92869956864513,4.173968009356193,0 -74.92876607464045,4.173527407137403,0 -74.92856644726787,4.173502358002437,0 -74.92849791765354,4.173937108137729,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>AmbienteAutoagronomo</name>
+			<visibility>0</visibility>
+			<LookAt>
+				<longitude>-74.92841545944943</longitude>
+				<latitude>4.173680647724266</latitude>
+				<altitude>0</altitude>
+				<heading>5.13839074722086</heading>
+				<tilt>33.90823101766868</tilt>
+				<range>124.5709105686267</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_wht-diamond</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-74.92862083287348,4.173875517859305,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

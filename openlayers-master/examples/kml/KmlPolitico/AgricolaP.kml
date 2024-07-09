@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>AgricolaP.kml</name>
+	<Style id="sn_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<PolyStyle>
+			<color>d9005500</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<PolyStyle>
+			<color>cc005500</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<PolyStyle>
+			<color>cc005500</color>
+		</PolyStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<PolyStyle>
+			<color>d9005500</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Folder>
+		<name>AgricolaP</name>
+		<Placemark>
+			<name>lote20</name>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-74.92457494952339,4.169276862980049,0 -74.92436668436108,4.169740536031467,0 -74.92499098140767,4.170334293007478,0 -74.92533116689683,4.169776254031103,0 -74.92457494952339,4.169276862980049,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>agricola</name>
+			<styleUrl>#msn_ylw-pushpin0</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-74.92893193907595,4.170546131236138,0 -74.92950998059112,4.170757528324546,0 -74.92985172136422,4.170749514398169,0 -74.93024103773419,4.170986993367594,0 -74.93039646486689,4.170687949284981,0 -74.93111245089933,4.171042254713182,0 -74.93142255109538,4.170333540828519,0 -74.9321001585293,4.170507458200019,0 -74.93332394778969,4.167805766401471,0 -74.93510827828479,4.168492981180913,0 -74.93612162709077,4.166334082686274,0 -74.93365250167004,4.165327054596632,0 -74.93402510653827,4.164460748248873,0 -74.9330860217989,4.16364723132897,0 -74.93259935891598,4.163419764474169,0 -74.93250747913456,4.163483242486154,0 -74.93165554099464,4.165100467053044,0 -74.93122824072107,4.165969020898271,0 -74.93019217073734,4.164750379639927,0 -74.93017991877139,4.164453443681656,0 -74.93021952359564,4.164062800975148,0 -74.92997077595737,4.163740296577942,0 -74.92954516725087,4.16356904572399,0 -74.9291936038305,4.163117058306809,0 -74.92886167353238,4.163006341453206,0 -74.92689046153321,4.167163233034335,0 -74.92600722286427,4.167870170413755,0 -74.9254666641766,4.168368021049779,0 -74.92722578754832,4.169290858480927,0 -74.92879977462718,4.167691919143166,0 -74.9301788393592,4.168099186603081,0 -74.92893193907595,4.170546131236138,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>mango</name>
+			<styleUrl>#msn_ylw-pushpin</styleUrl>
+			<Polygon>
+				<tessellate>1</tessellate>
+				<outerBoundaryIs>
+					<LinearRing>
+						<coordinates>
+							-74.92873753009425,4.171241353019112,0 -74.92868715745942,4.171209560212024,0 -74.92865804016496,4.171155470487076,0 -74.92870726743193,4.170994872976264,0 -74.92827418358843,4.170987211248407,0 -74.92827181570361,4.170874839490317,0 -74.92873970596068,4.170873391212283,0 -74.92799857660476,4.170432057144504,0 -74.92761219673098,4.170214361791151,0 -74.92754021028837,4.170296692904664,0 -74.92735737305125,4.170670543933531,0 -74.92786267356682,4.171038790880441,0 -74.92852825317263,4.171505847937548,0 -74.92873753009425,4.171241353019112,0 
+						</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

@@ -1,0 +1,401 @@
+/* 
+  Proyecto: Sistema de Informacion Georeferenciado del Centro Agropecuario "La Granja". 
+  Nombre del proyecto:  SIGLaGranja. 
+  Desarrolladores: Tecnologo en Análisis y Desarrollo de Sistemas de Información "ADSI". 
+  Numero de Ficha: 798585. 
+  Descripcion del Proyecto: Software que permita la Georeferenciación de Centro Agropecuario "La Granja" SENA Espinal - Tolima. 
+  Año de Desarrollo: 2015-2016. */
+/*_________________________________________________________________________*/
+/*-- estilo css y css3 para el software SIG LA GRANJA --*/
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+body{
+  width: 100% auto;
+  height: 100% auto;
+  background: #e9eff3;
+  font-family: cambria;
+  font-size: 16px;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+h1, h2, h3, h4 {
+  color: black;
+  font-size: 18px;
+}
+#section{
+  width: 1000px;
+  min-width: 600px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 1px 3.5px 8px 4px rgba(0,0,0,0.4);
+}
+ul, ol{
+  list-style: none;
+}
+#nav{
+  margin: auto;
+  border-radius: 5px;
+  width: 100%;
+  height: 35px;
+  background: -moz-linear-gradient(top, #0000ff 1%, #08088a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#0000ff), color-stop(100%,#08088a));
+  background: -o-linear-gradient(top, #0000ff 1%,#08088a 100%);
+  background: -ms-linear-gradient(top, #0000ff 1%,#08088a 100%);
+}
+.nav {
+  text-align: center;
+  list-style-type: none;
+  margin: 0 4px;
+  padding: 0px;
+  height: 35px; 
+  width: 80%;
+  background: -moz-linear-gradient(top, #0000ff 1%, #08088a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#0000ff), color-stop(100%,#08088a));
+  background: -o-linear-gradient(top, #0000ff 1%,#08088a 100%);
+  background: -ms-linear-gradient(top, #0000ff 1%,#08088a 100%);
+  }
+  .nav ul {  
+    background: -moz-linear-gradient(top, #0000ff 1%, #08088a 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #08088a), color-stop(100%,#08088a));
+    background: -o-linear-gradient(top, #0000ff 1%,#08088a 100%);
+    background: -ms-linear-gradient(top, #0000ff 1%,#08088a 100%);
+  }
+
+.nav li a{ 
+  border-left: 1.5px solid #fff;
+  color: #fff;
+  height: 15px;
+  width: 110px;
+  line-height: 17px;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+.nav ul li a { 
+    border: none;
+    border-bottom: 1.5px solid #fff;
+    text-align: left;
+    width: 127px;
+    padding: 6px;
+    height: auto;
+  }
+.nav li a:hover{ 
+  background-color: #5882fa;
+  color: black;
+}
+.nav > li{
+  float: left;
+}
+.nav li ul{
+  display:none;
+  position: absolute;
+  min-width: 127px;
+}
+.nav li:hover > ul{
+  display: block;
+}
+.nav li ul li{
+  position: relative;
+}
+.nav li ul li ul{ 
+  width: 143px;
+  right: -143px;
+  border-bottom: 5px solid #08088a;
+  border-right: 9px solid #08088a;
+  top: 0px;
+  left: 140px;
+}
+#article{
+  width: 100%;
+  height: 280px;
+  margin: auto;
+}
+#con-ingre{
+  width: 100%;
+  height: 350px;
+  margin: auto;
+}
+#login{
+  width: 99%;
+  height: 30px;
+  margin: auto;
+  margin-top: 5px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+#form{
+  width: 80%;
+  margin: auto;
+}
+.banner{
+  margin-top: 5px;
+  width: 99%;
+  border-radius: 20px;
+}
+.tit-form{
+  text-align: center;
+  font-family: cambria;
+  font-size: 20px;
+}
+.table{
+  width: 93%;
+  margin: auto;
+  font-size: 16px;
+}
+.text-admi{
+  text-align: justify;
+  font-family: cambria;
+  font-size: 20px;
+  margin-right: 130px;
+  margin-left: 130px;
+}
+#grilla {
+    margin: none;
+    padding: none;
+    display: none;
+    background-color: transparent;
+}
+#consultarr{
+  margin: none;
+  padding: none;  
+  display: none;
+  background-color: transparent;
+}
+#consultar{
+  margin: none;
+  padding: none;
+  display: none;
+  background-color: transparent;
+}
+#foot{
+  border-radius: 0px 0px 20px 20px;
+  margin: auto;
+  margin-top: 10px;
+  padding: 1px;
+  padding-top: 1px;
+  width: 99%;
+  background: -moz-linear-gradient(top, #0000ff 1%, #08088a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#0000ff), color-stop(100%,#08088a));
+  background: -o-linear-gradient(top, #0000ff 1%,#08088a 100%);
+  background: -ms-linear-gradient(top, #0000ff 1%,#08088a 100%);
+  color: white;
+  font-size: 13px;
+  text-align: center;
+}
+.fin{
+  font-size: 1px;
+  text-align: center;
+  color: transparent;
+}
+.inp-form, .error{
+  width: 150px;
+  height: 20px;
+  margin-bottom: 4px;
+  padding: 0 2px 2px;
+  font-size: 16.5px;
+  font-family: cambria;
+  text-align: left;
+  box-shadow: inset 0 -1px #ebebeb;
+    background: white;
+   -webkit-box-shadow:0 1px 1px rgba(0, , 0, 0.35);
+   box-shadow:0 0 1px 1px rgba(0, 0, 0, 0.35);
+   border:1px solid gray;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius: 5px;
+}.select-form, .errors{
+  width: 156px;
+  height: 23px;
+  margin-bottom: 4px;
+  padding: 0 2px 2px;
+  font-size: 16.5px;
+  font-family: cambria;
+  text-align: left;
+  box-shadow: inset 0 -1px #ebebeb;
+    background: white;
+   -webkit-box-shadow:0 1px 1px rgba(0, , 0, 0.35);
+   box-shadow:0 0 1px 1px rgba(0, 0, 0, 0.35);
+   border:1px solid gray;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius: 5px;
+}.select-hem-form{
+  width: 62px;
+  height: 23px;
+  margin-bottom: 4px;
+  padding: 0 2px 2px;
+  font-size: 16px;
+  font-family: cambria;
+  text-align: left;
+  box-shadow: inset 0 -1px #ebebeb;
+  background: white;
+   -webkit-box-shadow:0 1px 1px rgba(0, , 0, 0.35);
+   box-shadow:0 0 1px 1px rgba(0, 0, 0, 0.35);
+   border:2px solid red;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius: 5px;
+}.des-form, .errord{
+  width: 350px;
+  height: 80px;
+  margin-bottom: 4px;
+  padding: 0 2px 2px;
+  font-size: 16.5px;
+  font-family: cambria;
+  text-align: left;
+  box-shadow: inset 0 -1px #ebebeb;
+    background: white;
+   -webkit-box-shadow:0 1px 1px rgba(0, , 0, 0.35);
+   box-shadow:0 0 1px 1px rgba(0, 0, 0, 0.35);
+   border:1px solid gray;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius: 5px;
+}.uni-form, .erroru{
+  width: 73px;
+  height: 23px;
+  margin-bottom: 4px;
+  padding: 0 2px 2px;
+  font-size: 16px;
+  font-family: cambria;
+  text-align: left;
+  box-shadow: inset 0 -1px #ebebeb;
+    background: white;
+   -webkit-box-shadow:0 1px 1px rgba(0, , 0, 0.35);
+   box-shadow:0 0 1px 1px rgba(0, 0, 0, 0.35);
+   border:1px solid gray;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius: 5px;
+}.inp-ent, .errorn{
+  width: 73px;
+  height: 20px;
+  margin-bottom: 4px;
+  padding: 0 2px 2px;
+  font-size: 16.5px;
+  font-family: cambria;
+  text-align: left;
+  box-shadow: inset 0 -1px #ebebeb;
+    background: white;
+   -webkit-box-shadow:0 1px 1px rgba(0, , 0, 0.35);
+   box-shadow:0 0 1px 1px rgba(0, 0, 0, 0.35);
+   border:1px solid gray;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius: 5px;
+}.inp-coor, .errorc{
+  width: 100px;
+  height: 20px;
+  margin-bottom: 4px;
+  padding: 0 2px 2px;
+  font-size: 16.5px;
+  font-family: cambria;
+  text-align: left;
+  box-shadow: inset 0 -1px #ebebeb;
+    background: white;
+   -webkit-box-shadow:0 1px 1px rgba(0, , 0, 0.35);
+   box-shadow:0 0 1px 1px rgba(0, 0, 0, 0.35);
+   border:1px solid gray;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius: 5px;
+}.inp-usuario, .errorusu{
+  width: 250px;
+  height: 25px;
+  margin-bottom: 4px;
+  padding: 0 2px 2px;
+  font-size: 16.5px;
+  font-family: cambria;
+  text-align: left;
+  box-shadow: inset 0 -1px #ebebeb;
+    background: white;
+   -webkit-box-shadow:0 1px 1px rgba(0, , 0, 0.35);
+   box-shadow:0 0 1px 1px rgba(0, 0, 0, 0.35);
+   border:1px solid gray;
+   -webkit-border-radius:1px;
+   -moz-border-radius:1px;
+   border-radius: 5px;
+}input.text{
+  width: 250px;
+  height: 20px;
+  margin-bottom: 4px;
+  padding: 0 2px 2px;
+  font-size: 16.5px;
+  font-family: cambria;
+  text-align: left;
+  box-shadow: inset 0 -1px #ebebeb;
+  background: white;
+  -webkit-box-shadow:0 1px 1px rgba(0, , 0, 0.35);
+  box-shadow:0 0 1px 1px rgba(0, 0, 0, 0.35);
+  border:1px solid black;
+  -webkit-border-radius:1px;
+  -moz-border-radius:1px;
+  border-radius: 5px;
+}.inser-img{
+  border: 0.5px solid gray;
+  border-radius: 5px;
+}.error{ 
+    border: 2px solid red;
+}
+.errord{ 
+    border: 2px solid red;
+}
+.errorn{ border: 2px solid red;
+}
+.errorc{ border: 2px solid red;
+}
+.errors{ border: 2px solid red;
+}
+.erroru{ border: 2px solid red;
+}
+.errorusu{ border: 2px solid red;
+}#boton{
+    width: 30px;
+    height: 30px;
+}#botonconsulta{
+    width: 30px;
+    height: 30px;
+}.img-form{
+ width: 30px;
+ height: 30px;
+ background-color: transparent;
+}#Error{
+  background-image:url(../img/no.jpg);
+  background-repeat:no-repeat;
+  background-position:left; 
+  color:#FF0000; 
+  padding-left:30px; 
+  height:19px; 
+  padding-top:5px;
+  padding-right:5px;
+}#Success{
+  background-image:url(../img/yes.jpg);
+  background-repeat:no-repeat;
+  background-position:left; 
+  color:#669933; 
+  padding-left:30px; 
+  height:19px; 
+  padding-top:5px;
+  padding-right:5px;
+}
+.LoadIcon{ 
+  height:25px;
+}.fielsetcon { 
+    display: block;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2,9px solid;
+    width: 93%;
+    margin: auto;
+    font-size: 16px;
+}
+
+.legendcon{
+  font-weight: bold;
+}
+
